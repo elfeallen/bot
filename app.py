@@ -50,8 +50,8 @@ app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_host=1, x_proto=1)
 
 # get channel_secret and channel_access_token from your environment variable
-channel_secret = os.getenv('LINE_CHANNEL_SECRET', None)
-channel_access_token = os.getenv('LINE_CHANNEL_ACCESS_TOKEN', None)
+channel_secret = os.getenv('3e0c19b6ee903f3262b7054c1f4cb5a3', None)
+channel_access_token = os.getenv('UsoyDTyvuklsRyeO+V92j4CEKCDtWhVr4e7KiC7eOR8c4FXmQU2ih8tO4tQlvNFhLN4dZe2NoajuIdfgU1LHyvmOMfidXcGumS/N+Nh/ye7DUm5ydJvaAV4z25mURkRQgzctW25ADyHT4a7Cai5NiwdB04t89/1O/w1cDnyilFU=', None)
 if channel_secret is None:
     print('Specify LINE_CHANNEL_SECRET as environment variable.')
     sys.exit(1)
